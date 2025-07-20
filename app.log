@@ -1,0 +1,27 @@
+2025/07/20 19:46:13 [2025-07-20 19:46:13] [INFO] Connected to PostgreSQL
+2025/07/20 19:46:13 [2025-07-20 19:46:13] [INFO] Redis initialized
+2025/07/20 19:46:19 [2025-07-20 19:46:19] [ERROR] dial tcp [::1]:6379: connect: connection refused
+2025/07/20 19:49:05 [2025-07-20 19:49:05] [INFO] Connected to PostgreSQL
+2025/07/20 19:49:05 [2025-07-20 19:49:05] [INFO] Redis initialized
+2025/07/20 20:02:51 [2025-07-20 20:02:51] [FATAL] failed to connect database: failed to connect to `user=postgres database=otpdb`: 198.18.0.19:5432 (postgres): failed to receive message: read tcp 240.0.0.2:59573->198.18.0.19:5432: read: connection reset by peer
+2025/07/20 20:03:09 [2025-07-20 20:03:09] [INFO] Connected to PostgreSQL
+2025/07/20 20:03:09 [2025-07-20 20:03:09] [INFO] Redis initialized
+2025/07/20 20:17:20 [2025-07-20 20:17:20] [FATAL] failed to connect database: failed to connect to `user=erfanghorbani database=`: /private/tmp/.s.PGSQL.5432 (/private/tmp): server error: FATAL: database "erfanghorbani" does not exist (SQLSTATE 3D000)
+2025/07/20 20:19:32 [2025-07-20 20:19:32] [FATAL] failed to connect database: failed to connect to `user=erfanghorbani database=`: /private/tmp/.s.PGSQL.5432 (/private/tmp): server error: FATAL: database "erfanghorbani" does not exist (SQLSTATE 3D000)
+2025/07/20 20:20:01 [2025-07-20 20:20:01] [FATAL] failed to connect database: failed to connect to `user=erfanghorbani database=`: /private/tmp/.s.PGSQL.5432 (/private/tmp): server error: FATAL: database "erfanghorbani" does not exist (SQLSTATE 3D000)
+2025/07/20 20:20:30 [2025-07-20 20:20:30] [FATAL] failed to connect database: failed to connect to `user=erfanghorbani database=`: /private/tmp/.s.PGSQL.5432 (/private/tmp): server error: FATAL: database "erfanghorbani" does not exist (SQLSTATE 3D000)
+2025/07/20 20:20:42 [2025-07-20 20:20:42] [FATAL] failed to connect database: failed to connect to `user=erfanghorbani database=`: /private/tmp/.s.PGSQL.5432 (/private/tmp): server error: FATAL: database "erfanghorbani" does not exist (SQLSTATE 3D000)
+2025/07/20 20:21:24 [2025-07-20 20:21:24] [FATAL] failed to connect database: failed to connect to `user=erfanghorbani database=`: /private/tmp/.s.PGSQL.5432 (/private/tmp): server error: FATAL: database "erfanghorbani" does not exist (SQLSTATE 3D000)
+2025/07/20 20:21:42 [2025-07-20 20:21:42] [FATAL] failed to connect database: failed to connect to `user=postgres database=otp_db`: [::1]:5432 (localhost): server error: FATAL: database "otp_db" does not exist (SQLSTATE 3D000)
+2025/07/20 20:22:11 [2025-07-20 20:22:11] [FATAL] failed to connect database: failed to connect to `user=postgres database=otp_db`: [::1]:5432 (localhost): server error: FATAL: database "otp_db" does not exist (SQLSTATE 3D000)
+2025/07/20 20:22:26 [2025-07-20 20:22:26] [INFO] Connected to PostgreSQL
+2025/07/20 20:22:26 [2025-07-20 20:22:26] [INFO] Redis initialized
+2025/07/21 00:11:30 [2025-07-21 00:11:30] [INFO] Connected to PostgreSQL
+2025/07/21 00:11:30 [2025-07-21 00:11:30] [INFO] Redis initialized
+2025/07/21 00:11:54 [2025-07-21 00:11:54] [INFO] Connected to PostgreSQL
+2025/07/21 00:11:54 [2025-07-21 00:11:54] [INFO] Redis initialized
+2025/07/21 00:12:35 [2025-07-21 00:12:35] [INFO] Connected to PostgreSQL
+2025/07/21 00:12:35 [2025-07-21 00:12:35] [INFO] Redis initialized
+2025/07/21 00:14:31 [2025-07-21 00:14:31] [INFO] Connected to PostgreSQL
+2025/07/21 00:14:31 [2025-07-21 00:14:31] [INFO] Redis initialized
+2025/07/21 00:15:07 [2025-07-21 00:15:07] [ERROR] dial tcp [::1]:6379: connect: connection refused

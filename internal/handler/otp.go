@@ -34,7 +34,7 @@ func SendOTP(c *gin.Context) {
 	var user model.User
 	result := repository.FirstOrCreate(&user, model.User{PhoneNumber: req.Phone})
 	if result.Error != nil {
-		c.JSON(500, gin.H{"error": "خطا در ذخیره کاربر"})
+		c.JSON(500, gin.H{"error": "Could not save the user"})
 		return
 	}
 
@@ -45,7 +45,7 @@ func SendOTP(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"otp": code})
+	logger.Info("OTP code: " + code)
 }
 
 func VerifyOTP(c *gin.Context) {

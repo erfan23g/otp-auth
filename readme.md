@@ -73,27 +73,28 @@ Content-Type: application/json
 
 Example Request:
 
-bash ```
+```bash
 curl -X POST http://localhost:8080/api/v1/otp/verify \
   -H "Content-Type: application/json" \
   -d '{"phone": "+11111111111", "code": "123456"}' # Replace "123456" with the actual
   OTP from the logs
-    ```
+```
 Example Successful Response:
 
-JSON
+```JSON
 {
   "token": "your_generated_jwt_token_here"
 }
+```
 Important: The OTP code is only valid for 2 minutes from the time it was generated.
 
 
-Technologies Used
+## Technologies Used
 Go: Primary programming language
 
 Redis: In-memory data store for OTPs and rate limiting. Used because of it's fast response for large amount of requests.
 
 PostgreSQL: Relational database for user data. Used because of it's simplicity for not too large number of users.
 
-Contact
-[Erfan Ghorbani // erfan.ghorbani.1204@gmail.com // https://github.com/erfan23g]
+## Contact
+[Erfan Ghorbani/erfan.ghorbani.1204@gmail.com/https://github.com/erfan23g]

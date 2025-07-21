@@ -5,6 +5,7 @@ import (
 	"otp-auth/internal/model"
 	"otp-auth/internal/repository"
 	"otp-auth/internal/handler"
+	"otp-auth/internal/middleware"
 
 	"github.com/gin-gonic/gin"
 )
@@ -16,6 +17,7 @@ func main() {
 	repository.Init()
 
 	r := gin.Default()
+	r.Use(middleware.RateLimiter())
 
 	v1 := r.Group("/api/v1")
 	{

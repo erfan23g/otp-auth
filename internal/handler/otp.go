@@ -1,7 +1,6 @@
 package handler
 
 import (
-	"fmt"
 	"net/http"
 	"otp-auth/config"
 	"otp-auth/internal/model"
@@ -22,7 +21,6 @@ type VerifyOTPRequest struct {
 }
 
 func SendOTP(c *gin.Context) {
-	fmt.Println("HII")
 	var req SendOTPRequest
 	if err := c.ShouldBindJSON(&req); err != nil {
 		logger.Error(err.Error())

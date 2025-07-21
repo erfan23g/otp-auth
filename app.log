@@ -34,3 +34,12 @@
 2025/07/21 00:28:50 [2025-07-21 00:28:50] [INFO] Connected to PostgreSQL
 2025/07/21 00:28:50 [2025-07-21 00:28:50] [INFO] Redis initialized
 2025/07/21 00:28:54 [2025-07-21 00:28:54] [INFO] OTP code: 394489
+2025/07/21 09:41:42 [2025-07-21 09:41:42] [FATAL] failed to connect database: failed to connect to `user=postgres database=otpdb`:
+	127.0.0.1:5432 (localhost): dial error: dial tcp 127.0.0.1:5432: connect: connection refused
+	[::1]:5432 (localhost): dial error: dial tcp [::1]:5432: connect: connection refused
+2025/07/21 09:42:57 [2025-07-21 09:42:57] [FATAL] failed to connect database: failed to connect to `user=postgres database=otpdb`:
+	127.0.0.1:5432 (localhost): dial error: dial tcp 127.0.0.1:5432: connect: connection refused
+	[::1]:5432 (localhost): dial error: dial tcp [::1]:5432: connect: connection refused
+2025/07/21 09:44:02 [2025-07-21 09:44:02] [INFO] Connected to PostgreSQL
+2025/07/21 09:44:02 [2025-07-21 09:44:02] [INFO] Redis initialized
+2025/07/21 09:44:35 [2025-07-21 09:44:35] [INFO] OTP code: 668565

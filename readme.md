@@ -56,10 +56,12 @@ Send a POST request to the `/api/v1/otp/send` endpoint with the user's phone num
 
 **Example Request**:
 
+1. Request an otp code
 ```bash
 curl -X POST http://localhost:8080/api/v1/otp/send \
   -H "Content-Type: application/json" \
   -d '{"phone": "+11111111111"}'
+  ```
 Note: After sending the request, the generated OTP code will be logged in the app.log file.
 
 2. Verify OTP and Get JWT
@@ -71,10 +73,12 @@ Content-Type: application/json
 
 Example Request:
 
-Bash
+bash ```
 curl -X POST http://localhost:8080/api/v1/otp/verify \
   -H "Content-Type: application/json" \
-  -d '{"phone": "+11111111111", "code": "123456"}' # Replace "123456" with the actual OTP from the logs
+  -d '{"phone": "+11111111111", "code": "123456"}' # Replace "123456" with the actual
+  OTP from the logs
+    ```
 Example Successful Response:
 
 JSON

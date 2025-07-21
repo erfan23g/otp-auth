@@ -1,0 +1,75 @@
+openapi: 3.0.0
+info:
+  title: OTP Authentication API
+  description: API for sending and verifying OTPs.
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080/api/v1
+    description: Local development server
+paths:
+  /otp/send:
+    post:
+      summary: Send an OTP
+      description: Sends a one-time password (OTP) to the user.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                phone:
+                  type: string
+                  description: The phone number to send the OTP to.
+                  example: "+1234567890"
+      responses:
+        '200':
+          description: OTP sent successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "OTP sent successfully."
+        '400':
+          description: Bad request.
+        '500':
+          description: Internal server error.
+  /otp/verify:
+    post:
+      summary: Verify an OTP
+      description: Verifies the OTP provided by the user.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                phone:
+                  type: string
+                  description: The phone number associated with the OTP.
+                  example: "+1234567890"
+                otp:
+                  type: string
+                  description: The OTP to verify.
+                  example: "123456"
+      responses:
+        '200':
+          description: OTP verified successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "OTP verified successfully."
+        '400':
+          description: Bad request.
+        '401':
+          description: Unauthorized or invalid OTP.
+        '500':
+          description: Internal server error.
